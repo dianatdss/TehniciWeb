@@ -33,53 +33,46 @@
 <div class="previewPages">
     <h3>
         CREATII <br>
-        <input name="searchPhrase" id="searchedValue"/>
-        <input type="submit" value="search"/>
+        <select id="subjects">
+            <option value=""></option>
+            <option value="./pg1.html">ML</option>
+            <option value="./pg2.html">Padu's Workshop</option>
+         </select>
+        <input class="SubmitButton" type="button" value="Search" onclick="showPage();" />
+
     </h3>
-           <ul>
-               <li>         
-                   <img  class="previewPicture" src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/47212593_2176421029043234_9059386603490770944_n.jpg?_nc_cat=106&_nc_eui2=AeENCQf7LiKeUR97BlI1V6KQL60W24f4nWOmakEIi54jbkJcmGuh1genMi5FMTNVWd-LeZcFEi2hzSmT84vhp8gyqkirJX5dikAR8xs8AQknkA&_nc_ht=scontent.fotp3-2.fna&oh=0afc677c9cb267e0d2c7b5788ec81f87&oe=5C9F8DC2"> 
-                   <div>
-                       <a href="./pg1.html"> ML </a>
-                       <p> tannanananana </p>
-                   </div>
-                </li>
-                <li>
-                    <img  class="previewPicture" src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/47011221_2176425449042792_7158463180979568640_n.jpg?_nc_cat=103&_nc_eui2=AeFbRaefyIvNLz2RdowgLjSaM4GiVSg1RZbM7m8R1ZTNf25jV73YIRnu7zL_AQQUNz89LsuNjTFa3Bq0ujXzR81tzYG-MvT28HxgkDDSav4Ybw&_nc_ht=scontent.fotp3-2.fna&oh=ec9cf5017b24b0c4dbe2de4c8879af5d&oe=5C73EB5B">
-                    <div>
-                        <a href="./pg2.html"> Padu'sWorkshop </a>
-                        <p> tannanananana </p>
-                    </div>
-                </li>
-           </ul>
+    <ul>
+        <li>         
+            <img  class="previewPicture" src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/47212593_2176421029043234_9059386603490770944_n.jpg?_nc_cat=106&_nc_eui2=AeENCQf7LiKeUR97BlI1V6KQL60W24f4nWOmakEIi54jbkJcmGuh1genMi5FMTNVWd-LeZcFEi2hzSmT84vhp8gyqkirJX5dikAR8xs8AQknkA&_nc_ht=scontent.fotp3-2.fna&oh=0afc677c9cb267e0d2c7b5788ec81f87&oe=5C9F8DC2"> 
+            <div id="div1">
+                <a href="./pg1.html"> ML </a>
+                <p> Creatii pe hartie si pe ecrane </p>
+                <a id="show-more0" onclick="getdata(0);"> Show more</a>
+                <p id="more-info0"> </p>
+            </div>
+         </li>
+         <li>
+             <img  class="previewPicture" src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/47011221_2176425449042792_7158463180979568640_n.jpg?_nc_cat=103&_nc_eui2=AeFbRaefyIvNLz2RdowgLjSaM4GiVSg1RZbM7m8R1ZTNf25jV73YIRnu7zL_AQQUNz89LsuNjTFa3Bq0ujXzR81tzYG-MvT28HxgkDDSav4Ybw&_nc_ht=scontent.fotp3-2.fna&oh=ec9cf5017b24b0c4dbe2de4c8879af5d&oe=5C73EB5B">
+             <div>
+                 <a href="./pg2.html"> Padu's Workshop </a>
+                 <p> Creatii din lemn, rasina si mai multe </p>
+                 <a id="show-more1" onclick="getdata(1);"> Show more</a>
+                <p id="more-info1"> </p>
+             </div>
+         </li>
+    </ul>
 
-
-
-
-       <form action="http://wilder.azurewebsites.net/echo" method="POST">
-           <input name="searchPhrase" /> <br/>
-           <input type="checkbox" name="useStars" id="useStars" checked="true" />
-           <label for="useStars"> Use stars? </label> <br/>
-           <select name="langChoice">
-               <option>All</option>
-               <option>JS</option>
-               <option>TS</option>
-               <option selected >CSS</option>
-               <option>java</option>
-        
-           </select> <br>
-           <input type="submit" value="search"/>
-       </form>
-
+ 
 </div>
-       <footer>
-           &copy; 2018 Diana Tudosa FMI
-       </footer>
-    </div>
+
+<footer>
+    &copy; 2018 Diana Tudosa FMI
+</footer>
+</div>
 
     
     <script type="text/javascript" src="./js.js"> </script>
-
+    <script type="text/javascript" src="moreinfo.json"></script>
     </body>
     
     
