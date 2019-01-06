@@ -12,12 +12,14 @@ header{
 }
 
 body {
+    display:flex;
     background-color: #EFEEEE;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
 
 footer {
+    flex:1;
     background-color: lightgray;
     padding: 10px;
 }
@@ -25,6 +27,7 @@ footer {
 .menu{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 nav > span {
@@ -53,11 +56,19 @@ nav > span > a:hover {
 }
 
 .previewPages{
-    background: url("");
+    display: flex;
+    flex-direction: column;
 }
+.select{
+    flex:1;
+    display: flex;
 
+    flex-direction: column;
+    align-items: flex-start;
+}
 .previewPages li {
     font-weight: bold;
+    flex:2;
     display: flex;
     flex-direction: row;
     padding-bottom: 4%;
@@ -69,12 +80,10 @@ body  div  span  img {
     border: solid 1px black;
 }
 .previewPicture {
-    height: 40%; 
-    width: 40%; 
-    max-width: 40%; 
-    max-height: 40%;
-    min-width: 40%; 
-    min-height: 40%;
+    height: auto; 
+    width: 300px; 
+    min-width: 200px; 
+    min-height:auto;
     border-radius: 5px;
     border: solid 1px black;
 
@@ -83,6 +92,7 @@ li div > * {
     padding-left: 30px;
 }
 .container {
+    flex:7;
     border: solid 1px black;
     width: 989px;
     margin: 0 auto;
@@ -93,4 +103,8 @@ li div > * {
     display: flex;
     flex-direction: row;
     padding-bottom: 2%;
+}
+.header{
+    display:text;
+    flex-direction: column;
 }

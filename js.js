@@ -23,4 +23,3 @@ function getdata(nr){
   xhttp.send();
 }
 
-  
